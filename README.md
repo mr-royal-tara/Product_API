@@ -17,4 +17,4 @@ touch .env
 Start the project
 
 npm run webpack
-node dist/indx.js
+node dist/index.js
