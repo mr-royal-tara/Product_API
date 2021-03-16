@@ -1,4 +1,4 @@
-# Use TypeScrip to Create CRUD API using NodeJS and MongoDB
+# Use TypeScrip API using NodeJS and MongoDB
 
 
 Installation steps
@@ -14,9 +14,7 @@ npm i -D @types/node @types/express @types/dotenv @types/cors @types/helmet @typ
 Create ENV file 
 touch .env
 
-Start the project in two terminals
+Start the project
 
 npm run webpack
-npm start
-
-
+node dist/indx.js
