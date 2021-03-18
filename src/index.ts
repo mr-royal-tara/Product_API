@@ -4,6 +4,7 @@ import * as dotenv from "dotenv";
 import mongoose from 'mongoose';
 import helmet from "helmet";
 import * as productCRUD from './product-crud-mongo';
+import * as cartCRUD from './cart-curd-mongo'
 
 dotenv.config();
 
@@ -60,3 +61,5 @@ authorisedRoute.get('/', (req, res) => res.send('Hey, This is deafault API'));
 
 authorisedRoute.get('/products', productCRUD.getProductList);
 authorisedRoute.post('/products',productCRUD.createProduct);
+authorisedRoute.get('/carts', cartCRUD.getCartList);
+authorisedRoute.post('/carts',cartCRUD.createCart);
